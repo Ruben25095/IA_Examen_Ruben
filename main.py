@@ -15,8 +15,8 @@ data = load_breast_cancer(as_frame=True)
 df = data.frame
 # 'target' es 0 (Maligno) y 1 (Benigno)
 
-print("Dataset cargado. Forma (filas, columnas):", df.shape)
-print("Nombres de las columnas:", df.columns.tolist())
+print("Dataset cargado (filas, columnas):", df.shape)
+print("nombre de las columnas :", df.columns.tolist())
 
 # Renombramos la columna objetivo para mayor claridad
 df = df.rename(columns={'target': 'Diagnosis'})
